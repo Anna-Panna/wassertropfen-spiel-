@@ -11,8 +11,13 @@ game.setLife(5)
 game.setScore(0)
 basic.forever(function () {
     if (wasser.get(LedSpriteProperty.Y) < 4) {
-    	
+        wasser.change(LedSpriteProperty.Y, 1)
     } else {
-    	
+        if (wasser.isTouching(eimer)) {
+            basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00)
+            game.addScore(1)
+        } else {
+        	
+        }
     }
 })
