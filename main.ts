@@ -7,7 +7,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 let eimer: game.LedSprite = null
 let wasser = game.createSprite(2, 0)
 eimer = game.createSprite(2, 4)
-game.setLife(5)
+game.setLife(3)
 game.setScore(0)
 basic.forever(function () {
     if (wasser.get(LedSpriteProperty.Y) < 4) {
