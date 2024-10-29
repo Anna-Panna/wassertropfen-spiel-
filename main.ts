@@ -17,7 +17,11 @@ basic.forever(function () {
             basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00)
             game.addScore(1)
         } else {
-        	
+            basic.setLedColors(0xff0080, 0xff0080, 0xff0080)
+            game.removeLife(1)
         }
+        wasser.set(LedSpriteProperty.X, randint(0, 4))
+        wasser.set(LedSpriteProperty.Y, 0)
     }
+    basic.pause(500)
 })
