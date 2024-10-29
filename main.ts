@@ -15,17 +15,17 @@ basic.forever(function () {
         wasser.change(LedSpriteProperty.Y, 1)
     } else {
         if (wasser.isTouching(eimer)) {
-            basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00)
+            basic.setLedColors(0xff0000, 0xff8000, 0xffff00)
             game.addScore(1)
         } else {
             game.removeLife(1)
             leben = leben - 1
             if (leben == 3) {
-                basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00)
+                basic.setLedColors(0xff0000, 0xff8000, 0xffff00)
             } else if (leben == 2) {
-                basic.setLedColors(0x00ff00, 0x00ff00, 0x000000)
+                basic.setLedColors(0xff0000, 0xff8000, 0x000000)
             } else if (leben == 1) {
-                basic.setLedColors(0x00ff00, 0x000000, 0x000000)
+                basic.setLedColors(0xff0000, 0x000000, 0x000000)
             } else if (leben == 0) {
                 basic.setLedColors(0x000000, 0x000000, 0x000000)
             }
